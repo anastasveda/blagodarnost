@@ -373,7 +373,49 @@ h3 {
   text-underline-offset: 4px;
 }
 
-.requisites { line-height: 1.75; }
+.contact-details {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #9a968e;
+  text-align: center;
+}
+
+.contact-details summary {
+  display: inline-block;
+  cursor: pointer;
+  color: #9a968e;
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: .01em;
+  list-style: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(154, 150, 142, .42);
+  text-underline-offset: 3px;
+}
+
+.contact-details summary::-webkit-details-marker { display: none; }
+.contact-details summary::marker { content: ""; }
+.contact-details summary:hover { color: #77736c; }
+.contact-details summary:focus-visible {
+  outline: 2px solid rgba(36, 78, 61, .38);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+.contact-details-body {
+  max-width: 580px;
+  margin: 11px auto 0;
+  color: #858179;
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+.contact-details-body a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
 
 .legal-page { padding: 46px 0 72px; }
 .legal-card {
@@ -433,7 +475,12 @@ h3 {
   .visual-card { min-height: 450px; order: -1; }
   .steps { grid-template-columns: 1fr; }
   .price-row { align-items: flex-start; flex-direction: column; }
+  .contact-details { margin-top: 1px; }
+  .contact-details summary { font-size: 10px; }
+  .contact-details-body { max-width: 94%; font-size: 11px; }
+  .site-footer { padding-bottom: 30px; }
 }
+
 
 @media (max-width: 480px) {
   .container { width: min(100% - 22px, 1040px); }

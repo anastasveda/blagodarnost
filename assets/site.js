@@ -1,4 +1,4 @@
-const PAYMENT_URL = "PASTE_YOOKASSA_PAYMENT_LINK_HERE";
+const PAYMENT_URL = "https://yookassa.ru/my/i/amh0a67rumDI/l";
 const FALLBACK_EMAIL = "bezuhovpsy@gmail.com";
 
 function paymentTarget() {
@@ -8,7 +8,7 @@ function paymentTarget() {
 
   const subject = encodeURIComponent("Заказ: текстовый разбор личности");
   const body = encodeURIComponent(
-    "Здравствуйте! Хочу оформить текстовый разбор личности за 3 000 ₽."
+    "Здравствуйте! Хочу оформить текстовый разбор личности за 3 500 ₽."
   );
   return `mailto:${FALLBACK_EMAIL}?subject=${subject}&body=${body}`;
 }
